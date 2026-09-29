@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pathway Travel & Tours</title>
+<style>
+:root{--yellow:#FFD84D;--dark:#292929;--blue:#0D47A1;--red:#D71920;--light:#FFFDF5}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,sans-serif;background:var(--light);color:#222;line-height:1.6}
+.container{width:min(1150px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:#fff;box-shadow:0 2px 14px #0002}
+.navbar{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;align-items:center;gap:12px;font-weight:900}.logo-mark{display:grid;gap:3px}.logo-mark i{display:block;width:32px;height:7px;background:var(--red);border-radius:2px}.logo-mark i:nth-child(n+3){background:var(--blue)}
+.logo small{display:block;font-size:.7rem;letter-spacing:1px}
+nav{display:flex;gap:22px;font-weight:700}nav a{color:#222;text-decoration:none}nav a:hover{color:var(--blue)}
+.btn{display:inline-block;padding:13px 22px;border-radius:999px;text-decoration:none;font-weight:800;transition:.2s}.btn:hover{transform:translateY(-2px)}
+.btn-dark{background:var(--dark);color:#fff}.btn-yellow{background:var(--yellow);color:#222}.btn-outline{border:2px solid #222;color:#222}
+.hero{background:linear-gradient(118deg,var(--yellow) 0 64%,var(--dark) 64%);min-height:650px;display:flex;align-items:center}
+.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:60px;align-items:center;padding:75px 0}
+.tag{display:inline-block;background:#fff;padding:7px 13px;border-radius:30px;font-size:.8rem;font-weight:900;letter-spacing:1px}
+h1{font-size:clamp(3rem,7vw,6rem);line-height:.92;margin:20px 0;letter-spacing:-3px}.hero p{font-size:1.12rem;max-width:600px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.highlight{background:#fff;border-radius:28px;padding:34px;box-shadow:0 18px 45px #0003}.highlight h3{font-size:1.8rem;margin:0 0 12px}
+.quick{display:grid;grid-template-columns:1fr 1fr;gap:12px}.quick div{background:#f5f5f5;border-radius:14px;padding:15px;font-weight:800}
+section{padding:85px 0}.head{max-width:760px;margin-bottom:38px}.kicker{font-size:.8rem;letter-spacing:2px;font-weight:900;color:var(--blue)}
+h2{font-size:clamp(2.1rem,4vw,3.5rem);line-height:1.08;margin:7px 0 14px}.muted{color:#666}
+.video-section{background:#202020;color:#fff}.video-wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:35px;align-items:center}
+video{width:100%;border-radius:22px;box-shadow:0 18px 45px #0008;background:#000}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;padding:25px;border-radius:20px;border-top:5px solid var(--yellow);box-shadow:0 8px 25px #0001}.card h3{margin:8px 0}.card p{margin:0;color:#666}.icon{font-size:2rem}
+.services{background:#f1f1f1}.two{display:grid;grid-template-columns:1fr 1fr;gap:24px}.panel{background:#fff;padding:32px;border-radius:22px;box-shadow:0 8px 25px #0001}.panel.dark{background:var(--dark);color:#fff}
+.partners{display:flex;gap:12px;flex-wrap:wrap}.partners span{background:#fff;border:1px solid #ddd;padding:12px 16px;border-radius:999px;font-weight:800}
+.contact{background:var(--dark);color:#fff}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}.contact-card{background:#fff;color:#222;border-radius:22px;padding:30px}.contact-card div{background:#f4f4f4;padding:13px;border-radius:12px;margin:10px 0}.contact a{color:inherit}
+footer{background:#111;color:#bbb;padding:30px 0}.footer{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:850px){nav{display:none}.hero{background:linear-gradient(160deg,var(--yellow) 0 68%,var(--dark) 68%)}.hero-grid,.video-wrap,.two,.contact-grid{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.hero-grid{gap:25px}.highlight{margin-bottom:45px}}
+@media(max-width:560px){.cards,.quick{grid-template-columns:1fr}h1{letter-spacing:-1px}}
+</style>
+</head>
+<body>
+<header>
+ <div class="container navbar">
+  <a class="logo" href="#home" style="color:#222;text-decoration:none"><span class="logo-mark"><i></i><i></i><i></i><i></i></span><span>PATHWAY<small>TRAVEL & TOURS</small></span></a>
+  <nav><a href="#about">About</a><a href="#services">Services</a><a href="#teaser">Video</a><a href="#mission">Mission & Vision</a><a href="#contact">Contact</a></nav>
+  <a class="btn btn-yellow" href="#contact">Plan Your Trip</a>
+ </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+ <div class="container hero-grid">
+  <div><span class="tag">TRAVEL MADE SIMPLE</span><h1>We make a way for your journey.</h1>
+   <p>Pathway Travel & Tours delivers convenient, cost-effective travel solutions for tourists and corporate clients—from flights and hotels to tour packages, travel assistance, and document processing.</p>
+   <div class="actions"><a class="btn btn-dark" href="#services">Explore Services</a><a class="btn btn-outline" href="#contact">Book / Inquire</a></div>
+  </div>
+  <div class="highlight"><h3>Why Pathway?</h3><p class="muted">Operating since August 2019 with the goal of making trip arrangements simpler and more pleasurable.</p>
+   <div class="quick"><div>✈️ Flight Ticketing</div><div>🏨 Hotel Booking</div><div>🌴 Tour Packages</div><div>🛂 Travel Assistance</div></div>
+  </div>
+ </div>
+</section>
+
+<section id="about"><div class="container"><div class="head"><span class="kicker">WHO WE ARE</span><h2>A complete travel partner from planning to departure.</h2><p class="muted">Pathway Travel & Tours aims to become one of the trustworthy travel companies in the Philippines by giving customers a remarkable, end-to-end travel experience supported by high-quality and cost-effective solutions.</p></div></div></section>
+
+<section class="video-section" id="teaser">
+ <div class="container video-wrap">
+  <div><span class="kicker" style="color:var(--yellow)">30-SECOND TEASER</span><h2>See what Pathway can do for your next journey.</h2><p style="color:#ddd">A short introduction to the company, its travel services, and customer assistance.</p><a class="btn btn-yellow" href="#contact">Start Planning</a></div>
+  <video controls preload="metadata" poster="">
+    <source src="pathway_teaser_30s.mp4" type="video/mp4">
+    Your browser does not support embedded video.
+  </video>
+ </div>
+</section>
+
+<section class="services" id="services"><div class="container">
+ <div class="head"><span class="kicker">OUR SERVICES</span><h2>Travel and processing services in one place.</h2></div>
+ <div class="cards">
+  <div class="card"><div class="icon">✈️</div><h3>Airline Ticketing</h3><p>Domestic and international reservations and ticketing.</p></div>
+  <div class="card"><div class="icon">🏨</div><h3>Hotel Booking</h3><p>Domestic and international hotel reservations.</p></div>
+  <div class="card"><div class="icon">🚌</div><h3>Ferry & Bus Booking</h3><p>Convenient transport booking assistance.</p></div>
+  <div class="card"><div class="icon">🌴</div><h3>Holiday Tour Packages</h3><p>Domestic and international tour packages.</p></div>
+  <div class="card"><div class="icon">🛡️</div><h3>Travel Insurance</h3><p>Assistance for travel insurance requirements.</p></div>
+  <div class="card"><div class="icon">🛂</div><h3>Passport & Visa</h3><p>Passport and visa assistance for travelers.</p></div>
+  <div class="card"><div class="icon">📄</div><h3>Document Processing</h3><p>NBI, PSA, DTI, business permits, and school document authentication.</p></div>
+  <div class="card"><div class="icon">💳</div><h3>Bills / Online Payment</h3><p>Convenient bills and online payment assistance.</p></div>
+  <div class="card"><div class="icon">🚐</div><h3>Travel Support</h3><p>End-to-end coordination for a smoother journey.</p></div>
+ </div>
+</div></section>
+
+<section id="mission"><div class="container two">
+ <div class="panel"><span class="kicker">MISSION</span><h2>Extraordinary travel experiences.</h2><p>Provide top-notch travel and tour services, understand customer needs, tailor itineraries to individual tastes, surpass expectations, and build enduring relationships founded on dependability and trust.</p></div>
+ <div class="panel dark"><span class="kicker" style="color:var(--yellow)">VISION</span><h2>Service excellence and innovation.</h2><p>To become the top travel and tours agency, recognized for commitment to service excellence and industry innovation.</p></div>
+</div></section>
+
+<section><div class="container"><div class="head"><span class="kicker">PARTNERS & CLIENTS</span><h2>Organizations connected with Pathway.</h2></div>
+<div class="partners"><span>PESTECH Corporation</span><span>JOTAG Machine Shop</span><span>S & L Apartelle</span><span>Sentro Hotel</span><span>Biyaheko</span><span>AirAsia</span><span>Cohort Business Solutions & Consulting Firm</span><span>Hotel Rosita</span><span>Hotel Hop-Inn</span></div></div></section>
+
+<section class="contact" id="contact"><div class="container contact-grid">
+ <div><span class="kicker" style="color:var(--yellow)">HUB OFFICE</span><h2>Ready to make your next trip happen?</h2><p style="color:#ddd">Contact Pathway Travel & Tours for booking inquiries, tour packages, travel assistance, and document-processing services.</p><div class="actions"><a class="btn btn-yellow" href="mailto:pathwaytravelandtours@gmail.com">Email Us</a><a class="btn" style="border:2px solid white;color:white" href="tel:+639324026056">Call Now</a></div></div>
+ <div class="contact-card"><h3>Contact Information</h3>
+  <div><strong>Address</strong><br>Cadillac St., GV3 Brgy. Labas, Sta. Rosa City, Laguna 4026, Philippines</div>
+  <div><strong>Email</strong><br><a href="mailto:pathwaytravelandtours@gmail.com">pathwaytravelandtours@gmail.com</a></div>
+  <div><strong>Landline</strong><br>+63 49 566 8726</div>
+  <div><strong>Mobile / Viber / WhatsApp</strong><br>+63 932 402 6056</div>
+ </div>
+</div></section>
+</main>
+
+<footer><div class="container footer"><strong style="color:white">PATHWAY TRAVEL & TOURS</strong><span>© 2026 Pathway Travel & Tours. All rights reserved.</span></div></footer>
+</body>
+</html>
